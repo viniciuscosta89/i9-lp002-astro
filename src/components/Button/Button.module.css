@@ -1,0 +1,33 @@
+.btn {
+  display: block;
+
+  padding: 1rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: var(--clr-gray);
+  border: none;
+  border-radius: 20px;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #333;
+  }
+}
+
+.btn--text-center {
+  text-align: center;
+}
+
+.btn--text-left {
+  text-align: left;
+}
+
+.btn--text-right {
+  text-align: right;
+}

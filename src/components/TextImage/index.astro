@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import styles from './TextImage.module.css';
+import type { TextImageProps } from './types';
+
+const { schema, imgAlt, img, templateColumnsAuto1Fr, ...props } =
+  Astro.props as TextImageProps;
+---
+
+<div
+  class={`${styles['text-image']} ${
+    schema === 'image-text' ? styles['image-text'] : styles['text-image']
+  }
+		${templateColumnsAuto1Fr && styles['text-image--template-columns-auto-1fr']}`}
+  {...props}
+>
+  <picture class={styles['text-image__picture']}>
+    <Image
+      class={styles['text-image__img']}
+      src={img}
+      alt={imgAlt}
+    />
+  </picture>
+
+  <div class={styles['text-image__text']}><slot /></div>
+</div>

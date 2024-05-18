@@ -1,0 +1,16 @@
+{
+	"extends": ["stylelint-config-html", "stylelint-config-clean-order"],
+
+	"plugins": ["stylelint-selector-bem-pattern"],
+
+	"rules": {
+		"plugin/selector-bem-pattern": {
+			"componentName": "[A-Z]+",
+			"componentSelectors": {
+				"initial": "^\\.{componentName}(?:-[a-z]+)?$",
+				"combined": "^\\.combined-{componentName}__[a-z]+$"
+			},
+			"utilitySelectors": "^\\.util-[a-z]+$"
+		}
+	}
+}

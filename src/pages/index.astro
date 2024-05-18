@@ -1,0 +1,420 @@
+---
+import { Image } from 'astro:assets';
+
+import Button from '@components/Button';
+import Container from '@components/Container';
+import Header from '@components/Header';
+import TextImage from '@components/TextImage/index.astro';
+import Layout from '../layouts/Layout.astro';
+
+import lucrativo01 from '@assets/img/lucrativo01.png';
+import sec3Transp from '@assets/img/sec3_transp.png';
+import imgCardapio from '@assets/img/sec6-cardapio-para.png';
+---
+
+<Layout title='i9 LP002'>
+  <Header
+    title='Cardápio para'
+    highlightTitle='imprimir?'
+    text='Aqui cuidamos de tudo para você'
+  />
+
+  <main>
+    <section>
+      <Container>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginBlockEnd: '4rem'
+          }}
+        >
+          <Image
+            src={imgCardapio}
+            alt=''
+          />
+        </div>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <TextImage
+          schema='image-text'
+          imgAlt=''
+          img={lucrativo01}
+          imgAlt=''
+        >
+          <h2>Design Personalizado</h2>
+          <p>
+            Não é mais necessário lidar com designers externos ou agências.
+            Nossa equipe talentosa de designers irá colaborar com você para
+            criar um cardápio personalizado que reflita a identidade única do
+            seu restaurante.
+          </p>
+        </TextImage>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <TextImage
+          imgAlt=''
+          img={lucrativo01}
+        >
+          <h2>Produção Integrada</h2>
+          <p>
+            Esqueça as idas e vindas entre diferentes fornecedores. Na i9Menu,
+            cuidamos de todo o processo de produção do cardápio. Desde a
+            impressão de alta qualidade até a escolha do material ideal das
+            capas, garantimos que cada detalhe seja tratado com excelência.
+          </p>
+        </TextImage>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <TextImage
+          schema='image-text'
+          imgAlt=''
+          img={lucrativo01}
+        >
+          <h2>Atualização simples e rápida, cobrada por página</h2>
+          <p>
+            Quando precisar atualizar preços ou trocar um prato, basta avisar
+            nosso departamento de alteração. Funciona assim:
+          </p>
+          <ul>
+            <li>Você diz o que deseja alterar</li>
+            <li>Ajustamos a página com aquela informação</li>
+            <li>Imprimimos a página</li>
+            <li>Enviamos para você</li>
+            <li>Você tira a página antiga e coloca a página nova</li>
+          </ul>
+        </TextImage>
+      </Container>
+    </section>
+
+    <section class='heading-skew'>
+      <Container>
+        <div>
+          <h2>Impressão de cardápio com os melhores materiais</h2>
+        </div>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <TextImage
+          imgAlt=''
+          img={lucrativo01}
+        >
+          <p>
+            Não se trata apenas de criar cardápios bonitos. Nosso foco está em
+            produzir toda uma experiência que começa na visão, mas que passa
+            também pelo toque. Por isso, trabalhamos com diversos tipos de
+            papéis e capas para criar a melhor experiência sensitiva do seu
+            cliente.
+          </p>
+          <p>
+            Ao produzir seu cardápio conosco, você faz com que ele sinta o
+            conceito do seu estabelecimento desde o primeiro contato: o
+            recebimento do menu de pratos para escolher aquele que melhor mais
+            contribui para a experiência especial que ele veio aproveitar.
+          </p>
+          <Button
+            text='ENTRE EM CONTATO CONOSCO PARA OBTER CARDÁPIOS DE ALTA QUALIDADE'
+            textAlign='text-left'
+          />
+        </TextImage>
+      </Container>
+    </section>
+
+    <section class='img-text-banner'>
+      <Container>
+        <div class='img-text-banner__content'>
+          <div>
+            <Image
+              class='img-text-banner__img'
+              src={sec3Transp}
+              alt=''
+            />
+          </div>
+          <div>
+            <h2 class='img-text-banner__text'>
+              Diversos moldes de cardápio para imprimir
+            </h2>
+          </div>
+        </div>
+      </Container>
+    </section>
+
+    <section class='banner-bottom-rounded'>
+      <Container>
+        <p>
+          Cada restaurante é único e merece um cardápio que se destaque. É por
+          isso que oferecemos uma ampla variedade de formatos de capas, papéis e
+          tamanhos de cardápio para imprimir, adaptáveis às necessidades
+          específicas do seu negócio. Seja qual for o estilo do seu restaurante,
+          desde o rústico até o sofisticado, temos opções de capas e materiais
+          que irão complementar a sua identidade visual.
+        </p>
+
+        <p>
+          Nossa diversidade de moldes de cardápio para imprimir permite que você
+          escolha aquele que melhor se alinha com a atmosfera e o conceito do
+          seu estabelecimento.
+        </p>
+
+        <p>
+          E não se preocupe com a complexidade de navegar por essa grande
+          variedade de opções. Nosso time de consultores está pronto para
+          ajudá-lo a encontrar o modelo perfeito para o seu restaurante. Basta
+          chamar-nos no WhatsApp e teremos o prazer de orientá-lo na seleção do
+          melhor molde de cardápio para imprimir.
+        </p>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <TextImage
+          schema='image-text'
+          imgAlt=''
+          img={lucrativo01}
+          style={{ gridTemplateColumns: '1fr 1.5fr' }}
+        >
+          <h2 class='bigger-title'>
+            Como aumentar a durabilidade do seu cardápio impresso?
+          </h2>
+          <p>
+            Para garantir a durabilidade do seu cardápio impresso e oferecer uma
+            experiência de uso satisfatória para seus clientes, aqui estão dicas
+            úteis de produção que você deve garantir que estejam no seu menu:
+          </p>
+        </TextImage>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <TextImage
+          schema='image-text'
+          imgAlt=''
+          img={lucrativo01}
+        >
+          <h2>Tenha divisórias em PVC ou plástico para proteger as páginas</h2>
+          <p>
+            Optar por cardápios com divisórias em PVC ou plástico pode ser uma
+            excelente escolha. Esses materiais proporcionam uma camada adicional
+            de proteção, ajudando a evitar danos causados por líquidos ou
+            resíduos de alimentos. Na i9Menu, oferecemos uma variedade de opções
+            de divisórias que podem ser exploradas para garantir a durabilidade
+            do seu cardápio.
+          </p>
+        </TextImage>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <TextImage
+          imgAlt=''
+          img={lucrativo01}
+        >
+          <h2>Imprima as páginas em papel com laminação mais grossa</h2>
+          <p>
+            Escolher um papel com laminação mais grossa é outra maneira eficaz
+            de aumentar a durabilidade do seu cardápio. Essa laminação
+            proporciona resistência extra, tornando o cardápio menos suscetível
+            a rasgos e danos causados pelo manuseio frequente. Consulte as
+            opções disponíveis em nosso catálogo de cardápios.
+          </p>
+        </TextImage>
+      </Container>
+    </section>
+
+    <section>
+      <Container>
+        <TextImage
+          schema='image-text'
+          imgAlt=''
+          img={lucrativo01}
+        >
+          <h2>Exija uma impressão de alta qualidade</h2>
+          <p>
+            A qualidade da impressão do seu cardápio desempenha um papel crucial
+            na percepção inicial do cliente sobre o seu restaurante. Papel,
+            formato e detalhes de impressão comunicam diretamente a qualidade e
+            o profissionalismo do seu estabelecimento. Para garantir o melhor
+            resultado de impressão, é essencial contar com o apoio de
+            especialistas. Nossos consultores na i9Menu estão à disposição para
+            orientá-lo e oferecer soluções personalizadas que atendam às suas
+            necessidades específicas.
+          </p>
+        </TextImage>
+      </Container>
+    </section>
+
+    <section>
+      <Container
+        style={{
+          display: 'flex',
+          flexDirection: 'column'
+        }}
+      >
+        <TextImage
+          schema='image-text'
+          imgAlt=''
+          img={lucrativo01}
+          templateColumnsAuto1Fr
+          style={{ marginBlockEnd: '1rem' }}
+        >
+          <h2 class='bigger-title'>
+            Dica mais
+            <br />
+            importante na hora
+            <br /> de imprimir cardápio
+          </h2>
+        </TextImage>
+
+        <p class='the-paragraph'>
+          A dica mais importante na hora de imprimir um cardápio é contratar uma
+          fábrica especialista nesse material ao invés de uma gráfica. Aqui na
+          i9Menu, além de ter todo processo feito em um só lugar, você será
+          atendido por um consultor que tem outros clientes no mesmo perfil do
+          seu estabelecimento por todo o país.
+        </p>
+
+        <p class='the-paragraph'>
+          Ao escolher um fornecedor de confiança, você garante que todos os
+          aspectos do processo sejam tratados de forma eficiente e sem
+          complicações. Um parceiro que ofereça soluções abrangentes e resolva
+          quaisquer problemas que possam surgir ao longo do caminho é essencial
+          para o sucesso do seu projeto de cardápio impresso.
+        </p>
+
+        <p class='the-paragraph'>
+          Somos a maior empresa de cardápios da América Latina com mais de
+          30.000 estabelecimentos de pequeno, médio e grande porte atendidos em
+          todo Brasil. Conte com esse expertise para cuidar da principal
+          ferramenta de vendas do seu estabelecimento.
+        </p>
+
+        <Button
+          text='ESCOLHA A I9 MENU'
+          style={{ alignSelf: 'center' }}
+        />
+      </Container>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  section + section {
+    margin-block-start: 2rem;
+  }
+
+  section:last-of-type {
+    margin-block-end: 4rem;
+  }
+
+  .heading-skew {
+    transform: skewY(2deg);
+
+    margin-block-end: 3rem;
+    padding-block: 3rem;
+
+    font-size: 2rem;
+    line-height: normal;
+    color: #fff;
+    text-align: center;
+
+    background-color: #666666;
+
+    > * {
+      transform: skewY(-2deg);
+    }
+  }
+
+  @media (width >= 1024px) {
+    .heading-skew {
+      font-size: 2.5rem;
+    }
+  }
+
+  .img-text-banner {
+    margin-block: 5rem;
+    background-color: #fddcb3;
+  }
+
+  .img-text-banner__content {
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @media (width >= 1024px) {
+    .img-text-banner__content {
+      grid-template-columns: 1.25fr 1fr;
+    }
+  }
+
+  .img-text-banner__img {
+    height: auto;
+    margin-block-start: -1rem;
+  }
+
+  .img-text-banner__text {
+    padding-block: 1.25rem;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  @media (width >= 1024px) {
+    .img-text-banner__text {
+      font-size: 3.5rem;
+      padding-inline: 1.25rem;
+    }
+  }
+
+  .banner-bottom-rounded {
+    margin-block-end: 5rem;
+    padding-block: 3rem 10rem;
+
+    font-size: 1rem;
+    color: var(--clr-gray);
+
+    background-color: #fddcb3;
+
+    p + p {
+      margin-block-start: 2rem;
+    }
+  }
+
+  .bigger-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .the-paragraph {
+    color: var(--clr-gray);
+    font-size: 1rem;
+    margin-block-end: 2rem;
+  }
+
+  @media (width >= 1024px) {
+    .banner-bottom-rounded {
+      font-size: 1.5rem;
+    }
+
+    .bigger-title {
+      font-size: 3.5rem;
+    }
+
+    .the-paragraph {
+      font-size: 1.25rem;
+    }
+  }
+</style>
